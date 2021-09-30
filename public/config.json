@@ -21,7 +21,7 @@
                 }               
             ],
             "outArguments": [],
-            "url": "https://mc-ca-twilio.herokuapp.com/journeybuilder/execute",
+            "url": "https://mc-ca-twilio.herokuapp.com/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
