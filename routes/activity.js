@@ -62,7 +62,7 @@ exports.edit = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
     logData(req);
-    res.send(200, 'Edit');
+    res.status(200).Edit({"success":true});
 };
 
 /*
@@ -80,7 +80,7 @@ exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     console.log( req.body );
     logData(req);
-    res.send(200, 'Save');
+    res.status(200).Save({"success":true});
 };
 
 /*
@@ -118,7 +118,7 @@ exports.execute = function (req, res) {
 
     // FOR TESTING
     logData(req);
-    res.send(200, 'Publish');
+    res.status(200).Pulish({"success":true});
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
@@ -135,7 +135,7 @@ exports.execute = function (req, res) {
     //         var decodedArgs = decoded.inArguments[0];
             
     //         logData(req);
-    //         res.send(200, 'Execute');
+    //         res.status(200).Execute({"success":true});
     //     } else {
     //         console.error('inArguments invalid.');
     //         return res.status(400).end();
@@ -159,7 +159,7 @@ exports.publish = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
 //     logData(req);
-//     res.send(200, 'Publish');
+//     res.status(200).Publish({"success":true});
 };
 
 /*
